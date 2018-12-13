@@ -1,14 +1,14 @@
-### Codesnippets
+# Codesnippets
 ## Code without a home.
 
-# import modules
+### import modules
 import sys, os
-# define source directory
+### define source directory
 #srcpath = 'some csv path'
-# define csv list
+### define csv list
 #csv_list = [csvs]
 
-# function inputs: source directory, file location of CSVs, list of csvs
+### function inputs: source directory, file location of CSVs, list of csvs
 def mergeCSV(srcDir, destCSV, csvlist):
     with open(destCSV, 'w') as destFile:
         for csv in csvlist:
@@ -25,8 +25,8 @@ def mergeCSV(srcDir, destCSV, csvlist):
                             	for line in csvfile:
                                 	destFile.write(line) 
 									
-# import function ##optional								
-# from merge_csv import mergeCSV
+### import function (optional)								
+### from merge_csv import mergeCSV
 
-## run function
+### run function
 mergeCSV(srcpath, srcpath + '//csvname.csv', csv_list)
