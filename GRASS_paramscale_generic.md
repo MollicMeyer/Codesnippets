@@ -1,6 +1,10 @@
 # Codesnippets
-## Code without a home. 
-
+### Code without a home. 
+#### This script is generalized for the r.param.scale function in GRASS GIS 7.2.2
+#### It can only be used in the GRASS python interface
+#### It loops through analyses scales based on the list comprehension input; all other inputs are generic
+##### requires 1) DEM from Grass Environment name; 2) List of analyses scales; 3) script must be saved in the output workspace
+```
 ## import modules
 import os
 
