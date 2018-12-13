@@ -23,19 +23,19 @@ naming = ["asp_"]
 
 for i in list1:
 
-    #oname= "asp_" + str(i*3).zfill(3)+"m"
+    oname= "asp_" + str(i*3).zfill(3)+"m"
 
-    #gscript.run_command("r.param.scale", overwrite="T", input = 'coahoma_dem3m@PERMANENT', output = oname, size = i, method = method_n)
+    gscript.run_command("r.param.scale", overwrite="T", input = 'coahoma_dem3m@PERMANENT', output = oname, size = i, method = method_n)
 
-    #outname = oname+".tif"
+    outname = oname+".tif"
 
-    #AddLayer(oname)
+    AddLayer(oname)
 
     gscript.run_command("r.out.gdal", overwrite="T", input= oname, format = "GTiff", output = "T:\\AgTechInventures\\Mississippi\\data\\DTA\\asp\\"+outname)
 
 for j in list2:
 
-    #oname= "asp_" + str(j*3).zfill(3)+"m"
+    oname= "asp_" + str(j*3).zfill(3)+"m"
 
     gscript.run_command("r.param.scale", overwrite="T", input = 'coahoma_dem3m@PERMANENT', output = oname, size = j, method = method_n)
 
@@ -53,6 +53,6 @@ for k in list3:
 
     outname = oname+".tif"
 
-    #AddLayer(oname)
+    AddLayer(oname)
 
     gscript.run_command("r.out.gdal", overwrite="T", input= oname, format = "GTiff", output = "T:\\AgTechInventures\\Mississippi\\data\\DTA\\asp\\"+outname)
