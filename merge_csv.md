@@ -2,7 +2,7 @@
 ## Code without a home.
 ### Python v 2.7
 ### Function for merging csv files into one from a csv list; csv files require the same header columns.
-#### Requires 1)csv path; 2)csv list 3) merged csv name
+#### Requires 1) csv path; 2) csv list 3) merged csv name
 ```
 ### import modules
 import sys, os
